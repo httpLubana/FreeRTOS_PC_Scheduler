@@ -1,0 +1,15 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build scheduler",
+            "type": "shell",
+            "command": "gcc src/main.c src/scheduler.c src/tasks.c -o src/output/sim.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        }
+    ]
+}
